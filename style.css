@@ -1,0 +1,217 @@
+*{
+ box-sizing: border-box;
+}
+
+body {
+ margin: 0px;
+ font-family: 'segoe ui';
+}
+
+.nav {
+ height: 70px;
+ width: 100%;
+ background-color:#374045;
+ position: relative;
+}
+
+.nav > .nav-header {
+ display: inline;
+}
+
+.nav > .nav-header > .nav-title {
+ display: inline-block;
+ font-size: 32px;
+ color: #fff;
+ padding: 10px 10px 10px 10px;
+}
+
+.nav > .nav-btn {
+ display: none;
+}
+
+.nav > .nav-links {
+ display: inline;
+ float: right;
+ font-size: 18px;
+}
+
+.nav > .nav-links > a {
+ display: inline-block;
+ padding:22px;
+ text-decoration: none;
+ color: #efefef;
+}
+
+.nav > .nav-links > a:hover {
+ background-color: rgba(0, 0, 0, 0.3);
+}
+
+.nav > #nav-check {
+ display: none;
+}
+
+@media (max-width:600px) {
+ .nav > .nav-btn {
+   display: inline-block;
+   position: absolute;
+   right: 0px;
+   top: 0px;
+ }
+ .nav > .nav-btn > label {
+   display: inline-block;
+   width: 50px;
+   height: 50px;
+   padding: 13px;
+ }
+ .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
+   background-color: rgba(0, 0, 0, 0.3);
+ }
+ .nav > .nav-btn > label > span {
+   display: block;
+   width: 25px;
+   height: 10px;
+   border-top: 2px solid #eee;
+ }
+ .nav > .nav-links {
+   position: absolute;
+   display: block;
+   width: 100%;
+   background-color: #333;
+   height: 0px;
+   transition: all 0.3s ease-in;
+   overflow-y: hidden;
+   top: 50px;
+   left: 0px;
+ }
+ .nav > .nav-links > a {
+   display: block;
+   width: 100%;
+ }
+ .nav > #nav-check:not(:checked) ~ .nav-links {
+   height: 0px;
+ }
+ .nav > #nav-check:checked ~ .nav-links {
+   height: calc(100vh - 50px);
+   overflow-y: auto;
+ }
+}
+.msg{
+  background-color: #cfdac8;
+  padding-top:20px;
+  padding-left: 38px;
+  height: 300px;
+  overflow:hidden;
+}
+.msg h4{
+  font-size:40px;
+  font-family: sans-serif;
+  font-style: italic;
+}
+.msg p{
+  font-family: sans-serif;
+  font-size: 20px;
+}
+.msg p a{
+  margin-left: 190px;
+  border-radius:15px;
+  background-color: #0f3057;
+  border: none;
+}
+.msg p a:hover{
+  background-color:#0f3057;
+}
+.msg p a:active{
+    background-color:#f09900;
+}
+footer
+{
+  background-color: #4d4d4d;
+  font-size:15px;
+  bottom: 0px;
+  position: fixed;
+  height: 30px;
+  text-align: center;
+  font-family: sans-serif;
+  color: white;
+  width: 100%;
+}
+.content h3{
+  font-family: sans-serif;
+  font-size: 40px;
+  text-align: center;
+}
+@media only screen and (min-width: 768px)   {
+       .table {
+           margin-left: 35%;
+           text-decoration: none;
+       }
+   }
+   .table-head{
+     border-collapse: collapse;
+     font-size: 0.9em;
+     min-width: 500px;
+   }
+    .table-head thead tr {
+  background-color:#374045;
+  color: white;
+  width:500px;
+  height:45px;
+  font-family: sans-serif;
+  font-size: 20px;
+  margin-left:10px;
+}
+ .table-head td{
+  padding:8px 10px;
+  font-size: 20px;
+  text-align: center;
+  text-decoration: none;
+}
+.table-head tbody tr td a{
+  text-decoration: none;
+}
+.table-head tbody tr:nth-of-type(even){
+  background-color: #cfdac8;
+  text-decoration: none;
+}
+.name {
+  margin-left: 70px;
+  padding: 20px;
+  font-family: sans-serif;
+}
+.name h3,h5,h4{
+  font-weight: bold;
+  font-size: 20px;
+  padding:5px;
+}
+.name h3{
+    font-size: 35px;
+}
+.details{
+  font-size: 20px;
+  padding: 10px;
+}
+.name button{
+  background-color: #0f3057;
+  margin-left: 320px;
+  border-radius:15px;
+  padding: 10px;
+  width:90px;
+  font-size:15px;
+  border:none;
+}
+.name button:hover{
+    background-color: #19456b;
+}
+.text-center btn3 button{
+  color: white;
+  margin-right: 80px;
+}
+.btn-success button{
+    margin-left: 300px;
+  }
+form{
+  font-family: sans-serif;
+  font-size: 18px;
+  width:10%;
+  margin-left: 380px;
+}
