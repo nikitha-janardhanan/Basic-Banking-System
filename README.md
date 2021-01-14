@@ -15,6 +15,6 @@ This Web application is a part of The Spark Foundation Graduate Rotational Inter
    between multiple users.
    
    
-Frontend : HTML, CSS, JS, Bootstrap.
-Backend : PHP
+Frontend : HTML, CSS, JS, Bootstrap.   
+Backend : PHP  
 Database : MySQL
